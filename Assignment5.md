@@ -30,6 +30,6 @@
 
 output:
 
-![output](img/crontab.png)
+![output](img/Crontab1.png)
 
 ### Thank You
