@@ -53,6 +53,34 @@ Then, launch a new instance with this configuration:
 
 ## Part 3: Exploring LXD
 
+- LXD (Linux Container Daemon) is a next-generation system container manager built on LXC (Linux Containers). It provides a user-friendly interface to create and manage system containers and virtual machines (VMs), making it easier to run multiple isolated Linux environments on a single host.
+
+- LXD works like a lightweight alternative to virtual machines, offering the benefits of full Linux systems without the overhead of traditional VMs.
+
+- Installing:
+
+                sudo apt update
+                sudo apt install -y ldx
+
+
+                lxd --version
+
+                sudo lxd init
+
+                sudo usermod -aG lxd $USER
+                newgrp lxd
+
+                lxc launch images:ubuntu/24.04 my-container
+
+                lxc list
+
+
+- In the following screenshot, You can see the steps of how to run it.
+
+![LDX](img/LXD.png)
+
+
+
 ## Part 4: How to Stick Apps with Docker
 
 - Installation:
@@ -76,3 +104,21 @@ Then, launch a new instance with this configuration:
 - Experiment
 
 ![commands](img/dockercontainer.png)
+
+## Part 5: Snaps for Self-Contained Applications
+
+- Creating a Basic Snap
+
+![snap](img/snap.png)
+
+- After that run the following commands:
+
+                snapcraft
+
+                sudo snap install my-app_1.0_amd64.snap --dangerous
+
+- This will create a file that contain our code:
+
+                hello-world.py
+
+- It will show the output of the file:
