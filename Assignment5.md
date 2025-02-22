@@ -30,8 +30,10 @@
 
 output:
 
-![output](img/assignment5.jpg)
+![output](img/assignment5.png)
 
-![output](img/output.jpg)
+- Find the maximum.
+
+![max](img/findmax.png)
 
 ### Thank You
